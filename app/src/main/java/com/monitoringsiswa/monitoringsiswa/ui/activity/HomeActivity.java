@@ -41,10 +41,10 @@ public class HomeActivity extends AppCompatActivity {
                 viewPager.setCurrentItem(tab.getPosition());
                 switch (tab.getPosition()) {
                     case 0:
-                        binding.toolbarTitle.setText("Home");
+                        binding.toolbarTitle.setText("SIMONS WALI HOME");
                         break;
                     case 1:
-                        binding.toolbarTitle.setText("Input Pelanggaran Siswa");
+                        binding.toolbarTitle.setText("SANKSI");
                         break;
                 }
             }

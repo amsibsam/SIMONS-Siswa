@@ -22,7 +22,7 @@
                     android:textStyle="bold"
                     android:textSize="@dimen/toolar_title"
                     android:textColor="@android:color/white"
-                    android:text="SIMONS GURU LOGIN"/>
+                    android:text="SIMONS SISWA LOGIN"/>
             </RelativeLayout>
 
         </android.support.v7.widget.Toolbar>
