@@ -79,6 +79,7 @@ public class LoginActivity extends AppCompatActivity {
                         accountInfoStore.cacheAccountInfo(siswa);
                         progressDialog.dismiss();
                         startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                        finish();
                     }
                 });
     }
