@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if (accountInfoStore.hasAccount()){
             startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+            finish();
         }
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login);

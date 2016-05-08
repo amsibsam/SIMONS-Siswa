@@ -2,6 +2,7 @@ package com.monitoringsiswa.monitoringsiswa.viewmodel;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
+import android.view.View;
 
 import com.monitoringsiswa.monitoringsiswa.pojo.Sanksi;
 
@@ -36,6 +37,15 @@ public class SanksiViewModel extends BaseObservable{
     @Bindable
     public int getBatasAtas(){
         return sanksi.getBatasBawah();
+    }
+
+    @Bindable
+    public int getShouldVisible(){
+        int visbility = View.VISIBLE;
+        if (poinSiswa >= sanksi.getBatasBawah() && poinSiswa <= sanksi.getBatasAtas()){
+            visbility = View.GONE;
+        }
+        return visbility;
     }
 
     @Bindable
